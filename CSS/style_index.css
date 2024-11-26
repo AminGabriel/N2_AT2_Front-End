@@ -1,0 +1,27 @@
+.carousel-inner{
+    
+    border-radius: 20px;
+
+}
+
+.content{
+   display: flex;
+   gap: 20px;
+   padding: 20px;
+   justify-content: center;
+}
+
+.grid{
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#grid1 {background-color: blueviolet;}
+
+#grid2 {background-color: rgb(24, 172, 172);}
+
+#grid3 {background-color: rgb(226, 11, 11);}
+
+#grid4 {background-color: rgb(4, 3, 3);}
