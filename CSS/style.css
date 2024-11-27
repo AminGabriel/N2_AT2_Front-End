@@ -10,10 +10,14 @@ body {
     100%{background-position: 0% 50%; }
 }
 
-.container{
+.container {
     background-color: white;
+    gap: 20px;
     padding: 20px;
-    
+    display: flex; /* Define o container como flex */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    /* height: 100vh; Opcional, para ocupar a tela inteira e facilitar a visualização */
 }
 
 .nav-item .nav-link.active {
