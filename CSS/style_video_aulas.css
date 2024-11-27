@@ -1,0 +1,19 @@
+iframe{
+    height: 200px;
+    width: 300px;
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    justify-content: space-between; /* Espaçamento entre os cards */
+    gap: 10px; /* Espaçamento entre as linhas e colunas */
+}
+
+.video {
+    width: calc(33.3% - 10px); /* Garante que 5 cards caibam na linha com o gap */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+    overflow: hidden;
+    margin: 0; /* Remove margem adicional para alinhamento perfeito */
+}
+

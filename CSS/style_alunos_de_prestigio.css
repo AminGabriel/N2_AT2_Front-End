@@ -1,3 +1,50 @@
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    justify-content: space-between; /* Espaçamento entre os cards */
+    gap: 10px; /* Espaçamento entre as linhas e colunas */
+}
+
+.card {
+    width: calc(20% - 10px); /* Garante que 5 cards caibam na linha com o gap */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+    overflow: hidden;
+    margin: 0; /* Remove margem adicional para alinhamento perfeito */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer; /* Indica que a imagem é clicável */
+}
+
+/* Lightbox */
+.lightbox {
+    display: none; /* Oculta o lightbox por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semitransparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.lightbox img.zoomed {
+    transform: scale(2); /* Zoom da imagem */
+    cursor: zoom-out;
+}
+
 .image-container {
     position: relative;
     overflow: hidden;
